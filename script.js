@@ -6,7 +6,7 @@ closeBtn = document.querySelector(".close"),
 copyBtn = document.querySelector(".copy");
 function fetchRequest(file, formData) {
     infoText.innerText = "Scanning QR Code...";
-    fetch("/api/scan", {
+    fetch("api/scan", {
         method: 'POST', body: formData
     }).then(res => res.json()).then(result => {
         result = result[0].symbol[0].data;
