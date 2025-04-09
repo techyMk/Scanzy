@@ -12,8 +12,11 @@ body{
   justify-content: center;
   min-height: 100vh;
   padding: 0 10px;
-  background: #E3F2FD;
+  background: #83a4d4; 
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  
+  background: linear-gradient(to right, #b6fbff, #83a4d4); 
 }
+
 .wrapper{
   height: 270px;
   width: 420px;
