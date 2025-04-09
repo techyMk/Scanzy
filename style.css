@@ -1,35 +1,34 @@
-/* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-body{
+body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 0 10px;
-  background: #83a4d4; 
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  
-  background: linear-gradient(to right, #b6fbff, #83a4d4); 
+  background: #83a4d4;
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);
+  background: linear-gradient(to right, #b6fbff, #83a4d4);
 }
-
-.wrapper{
+.wrapper {
   height: 270px;
   width: 420px;
+  max-width: 100%;
   border-radius: 7px;
   background: #0B85FF;
   padding: 30px 30px 35px;
   transition: height 0.2s ease;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-.wrapper.active{
+.wrapper.active {
   height: 525px;
 }
-.wrapper form{
+.wrapper form {
   height: 210px;
   display: flex;
   cursor: pointer;
@@ -41,40 +40,42 @@ body{
   justify-content: center;
   transition: height 0.2s ease;
 }
-.wrapper.active form{
+.wrapper.active form {
   height: 225px;
   pointer-events: none;
 }
-form img{
+form img {
   display: none;
   max-width: 148px;
+  max-height: 148px;
+  object-fit: contain;
 }
-.wrapper.active form img{
+.wrapper.active form img {
   display: block;
 }
-.wrapper.active form .content{
+.wrapper.active form .content {
   display: none;
 }
-form .content i{
+form .content i {
   color: #0B85FF;
   font-size: 55px;
 }
-form .content p{
+form .content p {
   color: #0B85FF;
   margin-top: 15px;
   font-size: 16px;
 }
-.wrapper .details{
+.wrapper .details {
   opacity: 0;
   margin-top: 25px;
   pointer-events: none;
 }
-.wrapper.active .details{
+.wrapper.active .details {
   opacity: 1;
   pointer-events: auto;
   transition: opacity 0.5s 0.05s ease;
 }
-.details textarea{
+.details textarea {
   width: 100%;
   height: 128px;
   outline: none;
@@ -86,26 +87,26 @@ form .content p{
   padding: 10px 15px;
   border: 1px solid #fff;
 }
-textarea::-webkit-scrollbar{
+textarea::-webkit-scrollbar {
   width: 0px;
 }
-textarea:hover::-webkit-scrollbar{
+textarea:hover::-webkit-scrollbar {
   width: 5px;
 }
-textarea:hover::-webkit-scrollbar-track{
+textarea:hover::-webkit-scrollbar-track {
   background: none;
 }
-textarea:hover::-webkit-scrollbar-thumb{
+textarea:hover::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 8px;
 }
-.details .buttons{
+.details .buttons {
   display: flex;
   margin-top: 20px;
   align-items: center;
   justify-content: space-between;
 }
-.buttons button{
+.buttons button {
   height: 55px;
   outline: none;
   border: none;
@@ -118,15 +119,15 @@ textarea:hover::-webkit-scrollbar-thumb{
   transition: transform 0.3s ease;
   width: calc(100% / 2 - 10px);
 }
-.buttons button:active{
+.buttons button:active {
   transform: scale(0.95);
 }
 @media (max-width: 450px) {
-  .wrapper{
+  .wrapper {
     padding: 25px;
     height: 260px;
   }
-  .wrapper.active{
+  .wrapper.active {
     height: 520px;
   }
 }

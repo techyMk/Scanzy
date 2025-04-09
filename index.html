@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="image/mklogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <form action="#">
-            <input type="file" hidden>
+            <input type="file" accept="image/*" hidden>
             <img src="qr-code.png" alt="qr-code">
             <div class="content">
                 <i class="fas fa-cloud-upload"></i>
@@ -19,7 +20,7 @@
             </div>
         </form>
         <div class="details">
-            <textarea disabled>This is a simple qr code reader app made with HTML, CSS and JavaScript</textarea>
+            <textarea disabled>Scan results will appear here</textarea>
             <div class="buttons">
                 <button class="close">Close</button>
                 <button class="copy">Copy Text</button>
@@ -28,6 +29,5 @@
     </div>
 
     <script src="script.js"></script>
-    <script src="api/scan.js"></script>
 </body>
 </html>
